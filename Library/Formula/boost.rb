@@ -109,7 +109,7 @@ class Boost < Formula
     end
 
     if build.with? "static"
-      args << "link=shared,static"
+      args << "link=static"
     else
       args << "link=shared"
     end

@@ -24,7 +24,9 @@ class BerkeleyDb4 < Formula
     args = ["--disable-debug",
             "--prefix=#{prefix}",
             "--mandir=#{man}",
-            "--enable-cxx"]
+            "--enable-cxx",
+            "--disable-shared",
+            "--with-pic"]
 
     # BerkeleyDB requires you to build everything from the build_unix subdirectory
     cd "build_unix" do
